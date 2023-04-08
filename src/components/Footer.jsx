@@ -11,7 +11,7 @@ const Footer = () => {
                         return <a className='text-accent text-base' href={href} target="_blank" key={index}>{icon}</a>
                     })}
                 </div>
-                <p className='bg-[#1F260A]'>&copy; 2023 Emad Idrees All Rights Reserved</p>
+                <p className='text-[#1F260A]'>&copy; 2023 Emad Idrees All Rights Reserved</p>
             </div>
         </div>
     </footer>
