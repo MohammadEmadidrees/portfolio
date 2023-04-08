@@ -34,7 +34,7 @@ const Contact = () => {
                             </div>
                             
                             <div>
-                                <h4 className='font-body text-xl mb-1'>{title}</h4>
+                                <h4 className='font-body text-xl mb-1 text-[#1F260A]'>{title}</h4>
                                 <p className='mb-1 text-[#1F260A]'>{subtitle}</p>
                                 <p className='text-[#1F260A] font normal'>{description}</p>
                             </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                     <input className='input bg-white' type="email" name='user_email' placeholder='Your email'/>
                     </div>
                     <textarea className='textarea bg-white' name='message' placeholder='Your Message'></textarea>
-                    <button className='btn rounded-full btn-md bg-cyan-800 hover:bg-white hover:text-cyan-800'>Send Message</button>
+                    <button className='btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800'>Send Message</button>
             </form>
         </div>
     </section>
