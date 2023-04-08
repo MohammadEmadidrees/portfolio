@@ -6,8 +6,8 @@ const Services = () => {
     <div className="container mx-auto">
     <div className="flex flex-col items-center text-center">
         <h2 className='section-title before:content-services relative before:absolute before:opacity-40
-        before:-top-[2rem] before:-left-28 before:hidden before:lg:block'>What i do for Clients's</h2>
-        <p className='subtitle text-zinc-50'>I can design a beautiful eye-catching front-end for my clients which are responsible for all devices.
+        before:-top-[2rem] before:-left-28 before:hidden before:lg:block text-[#1F260A]'>What i do for Clients's</h2>
+        <p className='subtitle text-[#1F260A]'>I can design a beautiful eye-catching front-end for my clients which are responsible for all devices.
         </p>
     </div>
     <div className="grid lg:grid-cols-2 gap-8 place-items-center">

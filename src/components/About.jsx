@@ -11,14 +11,14 @@ const About = () => {
             <div className="flex flex-col">
                 <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3
                 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden
-                before:lg:block'>Emad Idrees</h2>
-                <p className='mb-4 text-zinc-50'>Freelancer Web Developer</p>
+                before:lg:block text-[#1F260A]'>Emad Idrees</h2>
+                <p className='mb-4 text-[#1F260A]'>Freelancer Web Developer</p>
                 <hr className='mb-8 opacity-5'/>
-                <p className='mb-8 text-zinc-50'>I have been working as a front-end developer for the last 3 months having strong command over 
+                <p className='mb-8 text-[#1F260A]'>I have been working as a front-end developer for the last 3 months having strong command over 
                 HTML, CSS, JavsScript, Bootstrap ,Tailwind. My work is fully responsive and all devices 
                 compatible including desktops and real devices.</p>
             </div>
-            <button className='btn btn-md rounded-full bg-cyan-800 hover:bg-white hover:text-cyan-800 transition-all'>Contact Me</button>
+            <button className='btn btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800 transition-all'>Contact Me</button>
         </div>
     </div>
     </div>

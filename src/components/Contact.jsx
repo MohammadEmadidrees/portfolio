@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="container mx-auto">
             <div className="flex flex-col items-center text-center">
                 <h2 className='section-title before:content:-contact relative 
-                before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>Contact Me</h2>
+                before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block text-[#1F260A]'>Contact Me</h2>
                 {/* <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis cumque
                 .</p> */}
             </div>
@@ -35,8 +35,8 @@ const Contact = () => {
                             
                             <div>
                                 <h4 className='font-body text-xl mb-1'>{title}</h4>
-                                <p className='mb-1 text-zinc-50'>{subtitle}</p>
-                                <p className='text-zinc-50 font normal'>{description}</p>
+                                <p className='mb-1 text-[#1F260A]'>{subtitle}</p>
+                                <p className='text-[#1F260A] font normal'>{description}</p>
                             </div>
                         </div>
                    
