@@ -35,7 +35,7 @@ const Navmobile = () => {
     <nav className='relative'>
 
       {/* menu icon  */}
-      <div onClick={()=> setIsOpen(true)} className='cursor-pointer w-max relative left-[20%] text-white'>
+      <div onClick={()=> setIsOpen(true)} className='cursor-pointer w-max relative left-[20%] text-[#1F260A]'>
         
         <MenuAlt3Icon className="h-8 "> </MenuAlt3Icon>
         </div>
