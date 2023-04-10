@@ -3,7 +3,7 @@ import Image from "../assets/img/about.webp"
 
 const About = () => {
   return (
-    <section className='section bg '> 
+    <section className='section bg'id='about'> 
     <div className="container mx-auto">
     <div className="flex flex-col xl:flex-row gap-24">
         <img className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl' src={Image} alt=''/>
@@ -18,7 +18,9 @@ const About = () => {
                 HTML, CSS, JavsScript, Bootstrap ,Tailwind. My work is fully responsive and all devices 
                 compatible including desktops and real devices.</p>
             </div>
-            <button className='btn btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800 transition-all'>Contact Me</button>
+            <a href='#contact'><button className='btn btn rounded-full btn-md bg-[#1F260A]
+             hover:bg-white hover:text-cyan-800 transition-all'>Contact Me</button>
+             </a>
         </div>
     </div>
     </div>

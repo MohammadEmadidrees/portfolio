@@ -52,3 +52,26 @@
 .bgbtn{
   border: #29abe2 solid 2px;
 }
+
+html,body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+.background{
+  padding-top: 18px;
+  background-color:#171717;
+}
+.zoom{
+  transition: transform .2s
+}
+.zoom:hover {
+  transform: scale(1.1);
+}

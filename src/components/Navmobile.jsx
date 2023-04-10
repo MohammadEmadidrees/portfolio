@@ -12,8 +12,8 @@ const Navmobile = () => {
       scale:0
     },
     visible:{
-      scale:180,
-      transition:{
+        scale:180,
+        transition:{
         type:'spring',
         stiffness:160,
         damping:60
@@ -32,7 +32,7 @@ const Navmobile = () => {
     },
   };
   return (
-    <nav className='relative'>
+    <nav className='relative text-[#1F260A] '>
 
       {/* menu icon  */}
       <div onClick={()=> setIsOpen(true)} className='cursor-pointer w-max relative left-[20%] text-[#1F260A]'>
@@ -62,8 +62,10 @@ const Navmobile = () => {
           </div>
           {navigation.map((item,index)=>{
             return(
-              <li key={index} className=' mb-8 relative top-[0px] '>
-                <Link>{item.name}</Link>
+              <li key={index} className=' mb-8 relative top-[0px]'>
+                <div>
+                  <Link onClick={()=>setIsOpen(false)} to={item.href}>{item.name}</Link>
+                </div>
               </li>
               );
             

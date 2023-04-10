@@ -2,9 +2,10 @@ import React from 'react'
 import { services } from '../data'
 const Services = () => {
   return (
-    <section id="services" className='section bg mt-3'>
-    <div className="container mx-auto">
-    <div className="flex flex-col items-center text-center">
+    <div className='background'>
+    <section id="services" className='section bg'>
+    <div className="container mx-auto ">
+    <div className="flex flex-col items-center text-center ">
         <h2 className='section-title before:content-services relative before:absolute before:opacity-40
         before:-top-[2rem] before:-left-28 before:hidden before:lg:block text-[#1F260A]'>What i do for Clients's</h2>
         <p className='subtitle text-[#1F260A]'>I can design a beautiful eye-catching front-end for my clients which are responsible for all devices.
@@ -23,6 +24,7 @@ const Services = () => {
     </div>
     </div>
     </section>
+    </div>
   )
 }
 

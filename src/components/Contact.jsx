@@ -15,11 +15,11 @@ const Contact = () => {
         };
 
   return (
-    
-    <section className='section bg mt-3' id='contact' >
-        <div className="container mx-auto">
+    <div className='background'>
+    <section className='section bg ' id='contact'>
+        <div className="container mx-auto ">
             <div className="flex flex-col items-center text-center">
-                <h2 className='section-title before:content:-contact relative 
+                <h2 id="contact" className='section-title before:content:-contact relative 
                 before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block text-[#1F260A]'>Contact Me</h2>
                 {/* <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis cumque
                 .</p> */}
@@ -53,6 +53,7 @@ const Contact = () => {
             </form>
         </div>
     </section>
+    </div>
   )
 }
 
