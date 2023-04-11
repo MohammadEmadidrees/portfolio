@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <div className='background'>
-    <section className='section bg ' id='contact'>
+    <section className='section bg' id='contact'>
         <div className="container mx-auto ">
             <div className="flex flex-col items-center text-center">
                 <h2 id="contact" className='section-title before:content:-contact relative 
@@ -24,8 +24,8 @@ const Contact = () => {
                 {/* <p className='subtitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis cumque
                 .</p> */}
             </div>
-            <div className="flex flex-col lg:gap-x-8 lg:flex-row">
-                <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
+            <div className="flex flex-col lg:gap-x-8 lg:flex-row ">
+                <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2 ">
                     {contact.map((item,index)=>{
                         const{icon,title,subtitle,description}=item;
                         return <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
@@ -43,14 +43,16 @@ const Contact = () => {
                     })}
                 </div>
             </div>
-            <form className='space-y-8 w-full max-w-[780px] ' ref={form} onSubmit={sendEmail}>
-                    <div className='flex gap-8 mt-1'>
-                    <input className='input bg-white' type="text" name='user_name' placeholder='Your name'/>
-                    <input className='input bg-white' type="email" name='user_email' placeholder='Your email'/>
+            <div className='formclass'>
+            <form className='space-y-8  max-w-[780px] mt-4 w-[50rem]' ref={form} onSubmit={sendEmail}>
+                    <div className='flex gap-8 mt-1  '>
+                    <input className='input bg-white' required type="text" name='user_name' placeholder='Your name' />
+                    <input className='input bg-white' required type="email" name='user_email' placeholder='Your email'/>
                     </div>
-                    <textarea className='textarea bg-white' name='message' placeholder='Your Message'></textarea>
+                    <textarea className='textarea bg-white' required name='message' placeholder='Your Message'></textarea>
                     <button className='btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800'>Send Message</button>
             </form>
+            </div>
         </div>
     </section>
     </div>
