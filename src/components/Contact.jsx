@@ -1,18 +1,26 @@
 import { contact } from '../data'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Toast from "./Ant"
+import { message } from 'antd';
 const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_9p677zo', 'template_pfz2zx9', form.current, 'gGUAkF_em2w75eBcq')
       .then((result) => {
-          console.log(result.text);
-          alert("Message Sent Successfully")
+         console.log(result.text);
+         setTimeout(()=>{
+            message.success("Email Sent Successfully")
+         },2000)
       }, (error) => {
-          console.log(error.text);
+         console.log(error.text);
+         setTimeout(()=>{
+            message.error("Email Not Sent Successfully")
+         },2000)
       });
-        };
+      e.target.reset();
+};
 
   return (
     <div className='background'>
@@ -47,7 +55,7 @@ const Contact = () => {
             <form className='space-y-8  max-w-[780px] mt-4 w-[50rem]' ref={form} onSubmit={sendEmail}>
                     <div className='flex gap-8 mt-1  '>
                     <input className='input bg-white' required type="text" name='user_name' placeholder='Your name' />
-                    <input className='input bg-white' required type="email" name='user_email' placeholder='Your email'/>
+                    <input className='input bg-white' required type="text" name='user_email' placeholder='Your email'/>
                     </div>
                     <textarea className='textarea bg-white' required name='message' placeholder='Your Message'></textarea>
                     <button className='btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800'>Send Message</button>
