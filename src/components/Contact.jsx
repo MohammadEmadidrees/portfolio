@@ -55,7 +55,7 @@ const Contact = () => {
             <form className='space-y-8  max-w-[780px] mt-4 w-[50rem]' ref={form} onSubmit={sendEmail}>
                     <div className='flex gap-8 mt-1  '>
                     <input className='input bg-white' required type="text" name='user_name' placeholder='Your name' />
-                    <input className='input bg-white' required type="text" name='user_email' placeholder='Your email'/>
+                    <input className='input bg-white' required type="email" name='user_email' placeholder='Your email'/>
                     </div>
                     <textarea className='textarea bg-white' required name='message' placeholder='Your Message'></textarea>
                     <button className='btn rounded-full btn-md bg-[#1F260A] hover:bg-white hover:text-cyan-800'>Send Message</button>
