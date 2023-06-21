@@ -22,9 +22,9 @@ import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // projects images
 import Project1 from './assets/img/projects/astralis.PNG';
-import Project2 from './assets/img/projects/todoapp.PNG';
+import Project2 from './assets/img/projects/turtle.png';
 import Project3 from './assets/img/projects/weatherapp.PNG';
-import Project4 from './assets/img/projects/restaurantapp.PNG';
+import Project4 from './assets/img/projects/mask.png';
 // import Project5 from './assets/img/projects/p5.webp';
 // import Project6 from './assets/img/projects/p6.webp';
 
@@ -123,9 +123,9 @@ export const projectsData = [
   {
     id: '2',
     image: Project2,
-    name: 'Todo Web Application',
+    name: 'Teach em Turtles',
     category: 'Web Developement',
-    href: 'https://todo-app-reactjs-five.vercel.app/',
+    href: 'https://www.teachemturtles.io/',
   },
   {
     id: '3',
@@ -137,9 +137,9 @@ export const projectsData = [
   {
     id: '4',
     image: Project4,
-    name: 'Restaurant Application',
+    name: 'Super Wall',
     category: 'Web Developement',
-    href: 'https://restaurant-menu-11.vercel.app/',
+    href: 'https://superwall.vercel.app/',
   },
   // {
   //   id: '5',
